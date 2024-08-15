@@ -1,13 +1,18 @@
-import './Styles/App.css'
-import Card from './Components/Card'
+import './Styles/App.css';
+import { useState } from "react";
+import Card from './Components/Card';
+import BookForm from './Components/BookForm'
 
 function App() {
+  const [submittedData, setSubmittedData] = useState(null);
 
   return (
     <>
-    <h1>Carga de estudiantes</h1>
-      <form></form>
-      <Card />
+    <h1>Seleccion de libro favorito</h1>
+      <BookForm setSubmittedData={setSubmittedData}/>
+      {
+        submittedData && <Card name={submittedData.name} book={submittedData.book}/>
+      }
     </>
   )
 }
