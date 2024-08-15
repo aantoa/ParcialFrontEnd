@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <h1>Seleccion de libro favorito</h1>
+    <h1>Mi libro favorito</h1>
       <BookForm setSubmittedData={setSubmittedData}/>
       {
         submittedData && <Card name={submittedData.name} book={submittedData.book}/>

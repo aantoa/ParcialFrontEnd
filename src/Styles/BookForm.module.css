@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.input{
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+.submitBtn{
+    background-color: rgba(15, 15, 205, 0.941);
+    color: white;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.error{
+    color: red;
+}

@@ -1,5 +1,5 @@
 const validateName = (name)=>{
-    return name.trim().length>=3 && !/\d/.test(name);
+    return name.trim().length>=3 && name==name.trimStart() && !/\d/.test(name);
 }
 
 const validateBook = (book)=>{
